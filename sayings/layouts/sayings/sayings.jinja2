@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{ request.locale_name }}">
+<head>
+    {% block head %}
+        {% block meta_tags %}
+            {% include "partials/meta_tags.jinja2" %}
+        {% endblock %}
+        <title>
+            {% block title_tag %}
+            {% endblock %}
+        </title>
+
+        {% block services_at_top %}
+            {% include "partials/services_at_top.jinja2" %}
+        {% endblock %}
+        {% block cascading_style_sheets_at_top %}
+            {% include "partials/cascading_style_sheets_at_top.jinja2" %}
+        {% endblock %}
+        {% block javascripts_at_top %}
+            {% include "partials/javascripts_at_top.jinja2" %}
+        {% endblock %}
+    {% endblock %}
+</head>
+<body>
+<div class="starter-template">
+    <div class="sayings_main">
+        {% block body %}
+            {% block header_inside_body %}
+                {% include "partials/header_inside_body.jinja2" %}
+            {% endblock %}
+
+            {% block content_inside_body %}
+            {% endblock %}
+
+            {% block footer_inside_body %}
+                {% include "partials/footer_inside_body.jinja2" %}
+            {% endblock %}
+
+            {% block javascripts_inside_body_at_bottom %}
+                {% include "partials/javascripts_inside_body_at_bottom.jinja2" %}
+            {% endblock %}
+
+            {% block services_inside_body_at_bottom %}
+                {% include "partials/services_inside_body_at_bottom.jinja2" %}
+            {% endblock %}
+
+        {% endblock %}
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+*** Starting uWSGI 2.0.7 (64bit) on [Sat Sep 13 21:59:12 2014] ***
+compiled with version: 4.8.2 on 13 September 2014 21:34:45
+os: Linux-3.13.0-35-generic #62-Ubuntu SMP Fri Aug 15 01:58:42 UTC 2014
+nodename: roman
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /media/roman/4d1100bd-dbb3-4eba-a941-a7db277a6154/work/python/pyramid_projects/sayings
+writing pidfile to ./pid_5000.pid
+detected binary path: /home/roman/.virtualenvs/pyramid_projects/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 127321
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+Listen queue size is greater than the system max net.core.somaxconn (128).
+*** Starting uWSGI 2.0.7 (64bit) on [Sat Sep 13 21:59:30 2014] ***
+compiled with version: 4.8.2 on 13 September 2014 21:34:45
+os: Linux-3.13.0-35-generic #62-Ubuntu SMP Fri Aug 15 01:58:42 UTC 2014
+nodename: roman
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /media/roman/4d1100bd-dbb3-4eba-a941-a7db277a6154/work/python/pyramid_projects/sayings
+writing pidfile to ./pid_5000.pid
+detected binary path: /home/roman/.virtualenvs/pyramid_projects/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 127321
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+Listen queue size is greater than the system max net.core.somaxconn (128).
+*** Starting uWSGI 2.0.7 (64bit) on [Sat Sep 13 22:04:23 2014] ***
+compiled with version: 4.8.2 on 13 September 2014 21:34:45
+os: Linux-3.13.0-35-generic #62-Ubuntu SMP Fri Aug 15 01:58:42 UTC 2014
+nodename: roman
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /media/roman/4d1100bd-dbb3-4eba-a941-a7db277a6154/work/python/pyramid_projects/sayings
+writing pidfile to ./pid_5000.pid
+detected binary path: /home/roman/.virtualenvs/pyramid_projects/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 127321
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+Listen queue size is greater than the system max net.core.somaxconn (128).

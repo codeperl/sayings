@@ -1,0 +1,63 @@
+{% extends "sayings:layouts/sayings/sayings.jinja2" %}
+{% block title_tag %}
+    page edit
+{% endblock %}
+
+{% block content_inside_body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Edit Page</h2>
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6">
+                    <div class="content">
+                        <h3>Edit Page Form</h3>
+                        <form action="" method="post">
+                            <div class="form-group
+                            {% if(form.name.errors) %}
+                                has-error
+                            {% endif %}">
+                                {{ form.name.label }}: {{ form.name(class='form-control') }}
+                                <div class="errors">
+                                    {% for error in form.name.errors %}
+                                        <div class="help-block">{{ error }}</div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div class="form-group
+                            {% if(form.content.errors) %}
+                                has-error
+                            {% endif %}">
+                                {{ form.content.label }}: {{ form.content(class='form-control') }}
+                                <div class="errors">
+                                    {% for error in form.content.errors %}
+                                        <div class="help-block">{{ error }}</div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div class="form-group
+                            {% if(form.published_at.errors) %}
+                                has-error
+                            {% endif %}">
+                                {{ form.published_at.label }}: {{ form.published_at(class='form-control') }}
+                                 <div class="errors">
+                                    {% for error in form.published_at.errors %}
+                                        <div class="help-block">{{ error }}</div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                {{ form.submit(class='btn btn-primary pull-right') }}
+                            </div>
+                            {{ form.id(type="hidden") }}
+                            {{ form.csrf_token }}
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

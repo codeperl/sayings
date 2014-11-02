@@ -1,0 +1,14 @@
+{% extends "sayings:layouts/sayings/sayings.jinja2" %}
+
+{% block title_tag %}
+    Home
+{% endblock %}
+
+{% block cascading_style_sheets_at_top %}
+    {{ super() }}
+    <link href="{{request.static_url('sayings:static/templates/home/home/index.css')}}" rel="stylesheet">
+{% endblock %}
+
+{% block content_inside_body %}
+    {% sub_request { 'request': request, 'route': 'home_block_leading_container' } %}
+{% endblock %}

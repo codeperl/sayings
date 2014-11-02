@@ -1,0 +1,44 @@
+{% extends "sayings:layouts/sayings/sayings.jinja2" %}
+{% block title_tag %}
+    group edit
+{% endblock %}
+
+{% block content_inside_body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Edit Group</h2>
+
+                <div class="col-md-3">
+                    {% sub_request { 'request': request, 'route': 'administration_group_block_add_instruction' } %}
+                </div>
+                <div class="col-md-6">
+                    <div class="content">
+                        <h3>Edit Group Form</h3>
+                        <form action="" method="post">
+                            <div class="form-group
+                            {% if(form.name.errors) %}
+                                has-error
+                            {% endif %}">
+                                {{ form.name.label }}: {{ form.name(class='form-control') }}
+                                <div class="errors">
+                                    {% for error in form.name.errors %}
+                                        <div class="help-block">{{ error }}</div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                {{ form.submit(class='btn btn-primary pull-right') }}
+                            </div>
+                            {{ form.id(type="hidden") }}
+                            {{ form.csrf_token }}
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    Advertise here
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "sayings:layouts/sayings/sayings.jinja2" %}
+{% block title_tag %}
+    group view
+{% endblock %}
+
+{% block content_inside_body %}
+    <div class="row">
+        <div class="col-md-6">
+            Group
+        </div>
+        <div class="col-md-6">
+            {{ group.name }}
+        </div>
+    </div>
+{% endblock %}

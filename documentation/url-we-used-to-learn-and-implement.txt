@@ -1,0 +1,40 @@
+To setup some server-side configuration we used this url:
+1] https://liangsun.org/posts/pyramid-nginx-uwsgi-mysql/
+
+How to create sub-request and fetch data from another view callable:
+1] http://docs.pylonsproject.org/projects/pyramid/en/master/whatsnew-1.4.html
+
+ColendarAlchmy to integrate with deform
+1] https://github.com/stefanofontanelli/ColanderAlchemy
+
+Pymongo with pyramid
+1] https://www.mongodb.com/presentations/mongodb-python-pylons-and-pyramid
+
+wtforms-alchemy tutorial
+1] http://wtforms-alchemy.readthedocs.org/en/latest/introduction.html
+
+jinja2 extension writing:
+1] https://github.com/coffin/coffin/blob/master/coffin/template/defaulttags.py
+
+how to create enum in python
+1] http://stackoverflow.com/questions/36932/how-can-i-represent-an-enum-in-python
+
+secure wtform
+1] http://wtforms.simplecodes.com/docs/1.0.2/ext.html
+
+wtforms with pyramid framework
+1] http://pyramid-blogr.readthedocs.org/en/latest/blog_models_and_views.html
+
+connection refused in pyramid_mailer. Perhaps problem is in smtp configuration. amazing way to debug smtp with python
+1] http://stackoverflow.com/questions/20349170/socket-error-errno-111-connection-refused
+
+csrf-token generation with wtforms example in bitbucket
+https://bitbucket.org/simplecodes/wtforms/src/1939aec691af476960dfe16b4e17ba4fc070459b/wtforms/ext/csrf/session.py?at=default
+
+alembic autogeneration the migration. Problem occurs. Its always generating upgrade as empty or drop table queries.
+Solution can be found here.
+1] https://groups.google.com/forum/#!topic/sqlalchemy-alembic/nc6hHAxat0w
+2] http://www.devsniper.com/sqlalchemy-tutorial-3-base-entity-class-in-sqlalchemy/
+
+Design specification by google.
+1] http://www.google.com/design/spec/material-design/introduction.html#introduction-goals
