@@ -1,4 +1,4 @@
 sayings
 =======
 
-sayings a sample project structure for pyramid projects
+sayings is a sample project structure for pyramid projects
